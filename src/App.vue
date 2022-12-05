@@ -1,91 +1,107 @@
 <script setup>
-import { RouterLink, RouterView } from "vue-router";
-import HelloWorld from "./components/HelloWorld.vue";
+import ConwayGrid from './components/ConwayGrid.vue';
 </script>
 
 <template>
-  <header>
-    <img
-      alt="Vue logo"
-      class="logo"
-      src="@/assets/logo.svg"
-      width="125"
-      height="125"
-    />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-    </div>
-  </header>
-
-  <RouterView />
+<ConwayGrid />
 </template>
 
-<style scoped>
-header {
-  line-height: 1.5;
-  max-height: 100vh;
+<style>
+.btn{
+  border: 2px solid #3C6E71;
+  color: var(--color-orange);
+  background-color: var(--color-base-2);
+  height: 24px;
 }
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
+.btn-selected{
+  background-color: #3C6E71;
+  color: white;
+  border: 2px solid #3C6E71;
 }
 
-nav {
-  width: 100%;
-  font-size: 12px;
+.btn-deactivated{
+  border: 2px solid #D9D9D9;
+  color: #D9D9D9;
+}
+
+.btn-deactivated-selected{
+  border: 2px solid #D9D9D9;
+  color: white;
+  background-color: #D9D9D9;
+}
+
+.options{
+  display:flex;
+  align-items: center;
+  gap: 16px;
+}
+.main{
+  font-family: Arial, sans-serif;
+  color: #284B63;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  font-weight: bold;
+}
+
+.grid-size-selector{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 4px;
+}
+
+.probability{
+  display: flex;
+  padding-bottom: 8px;
+  justify-content: center;
   text-align: center;
-  margin-top: 2rem;
 }
 
-nav a.router-link-exact-active {
-  color: var(--color-text);
+.range{
+  -webkit-appearance: none;
+  width: auto;
+  height: 15px;
+  background: #D9D9D9;
+  outline: none;
+  border: 2px solid #3C6E71;
+  border-radius: 8px;
+  display: block;
 }
 
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
+.range-deactivated{
+  -webkit-appearance: none;
+  background: #D9D9D9;
+  border: 2px solid #D9D9D9;
+  pointer-events: none;
 }
 
-nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
+.text-deactivated{
+  color: #D9D9D9;
 }
 
-nav a:first-of-type {
-  border: 0;
+.range::-moz-range-thumb {
+  background: #3C6E71;
+  cursor: pointer;
 }
 
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
+.range-deactivated::-moz-range-thumb {
+  background: #D9D9D9;
+  cursor: pointer;
+}
 
-  .logo {
-    margin: 0 2rem 0 0;
-  }
+.range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #3C6E71;
+  cursor: pointer;
+}
 
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-
-  nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
-
-    padding: 1rem 0;
-    margin-top: 1rem;
-  }
+.range-deactivated::-webkit-slider-thumb {
+  background: #D9D9D9;
 }
 </style>
