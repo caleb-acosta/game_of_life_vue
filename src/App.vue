@@ -1,44 +1,44 @@
 <script setup>
-import ConwayGrid from './components/ConwayGrid.vue';
+import ConwayGrid from "./components/ConwayGrid.vue";
 </script>
 
 <template>
-<ConwayGrid />
+  <ConwayGrid />
 </template>
 
 <style>
-.btn{
-  border: 2px solid #3C6E71;
+.btn {
+  border: 2px solid #3c6e71;
   color: var(--color-orange);
   background-color: var(--color-base-2);
   height: 24px;
 }
 
-.btn-selected{
-  background-color: #3C6E71;
+.btn-selected {
+  background-color: #3c6e71;
   color: white;
-  border: 2px solid #3C6E71;
+  border: 2px solid #3c6e71;
 }
 
-.btn-deactivated{
-  border: 2px solid #D9D9D9;
-  color: #D9D9D9;
+.btn-deactivated {
+  border: 2px solid #d9d9d9;
+  color: #d9d9d9;
 }
 
-.btn-deactivated-selected{
-  border: 2px solid #D9D9D9;
+.btn-deactivated-selected {
+  border: 2px solid #d9d9d9;
   color: white;
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
 }
 
-.options{
-  display:flex;
+.options {
+  display: flex;
   align-items: center;
   gap: 16px;
 }
-.main{
+.main {
   font-family: Arial, sans-serif;
-  color: #284B63;
+  color: #284b63;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -46,48 +46,48 @@ import ConwayGrid from './components/ConwayGrid.vue';
   font-weight: bold;
 }
 
-.grid-size-selector{
+.grid-size-selector {
   display: grid;
   grid-template-columns: auto auto;
   grid-gap: 4px;
 }
 
-.probability{
+.probability {
   display: flex;
   padding-bottom: 8px;
   justify-content: center;
   text-align: center;
 }
 
-.range{
+.range {
   -webkit-appearance: none;
   width: auto;
   height: 15px;
-  background: #D9D9D9;
+  background: #d9d9d9;
   outline: none;
-  border: 2px solid #3C6E71;
+  border: 2px solid #3c6e71;
   border-radius: 8px;
   display: block;
 }
 
-.range-deactivated{
+.range-deactivated {
   -webkit-appearance: none;
-  background: #D9D9D9;
-  border: 2px solid #D9D9D9;
+  background: #d9d9d9;
+  border: 2px solid #d9d9d9;
   pointer-events: none;
 }
 
-.text-deactivated{
-  color: #D9D9D9;
+.text-deactivated {
+  color: #d9d9d9;
 }
 
 .range::-moz-range-thumb {
-  background: #3C6E71;
+  background: #3c6e71;
   cursor: pointer;
 }
 
 .range-deactivated::-moz-range-thumb {
-  background: #D9D9D9;
+  background: #d9d9d9;
   cursor: pointer;
 }
 
@@ -97,11 +97,11 @@ import ConwayGrid from './components/ConwayGrid.vue';
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  background: #3C6E71;
+  background: #3c6e71;
   cursor: pointer;
 }
 
 .range-deactivated::-webkit-slider-thumb {
-  background: #D9D9D9;
+  background: #d9d9d9;
 }
 </style>
