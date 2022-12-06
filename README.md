@@ -8,17 +8,10 @@ This is an implementation of [Conway's Game of life](https://en.wikipedia.org/wi
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+### Compile and Preview
 
 ```sh
-npm run dev
+npm run preview
 ```
 
-and open [localhost:5173](http://localhost:5173/)
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
+and open [localhost:4173](http://localhost:4173/)
