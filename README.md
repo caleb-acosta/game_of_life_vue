@@ -8,7 +8,21 @@ This is an implementation of [Conway's Game of life](https://en.wikipedia.org/wi
 npm install
 ```
 
+### Dev Setup
+
+```sh
+npm run dev
+```
+
+and open [localhost:4173](http://localhost:4173/)
+
+
 ### Compile and Preview
+
+
+```sh
+npm run build
+```
 
 ```sh
 npm run preview

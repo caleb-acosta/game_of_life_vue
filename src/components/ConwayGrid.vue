@@ -88,7 +88,7 @@ export default {
     },
 
     setSize(new_size) {
-      if ([5, 10, 20, 50].includes(new_size) && !this.running) {
+      if ([10, 20, 50, 100].includes(new_size) && !this.running) {
         this.size = new_size;
         this.resetGrid();
       }

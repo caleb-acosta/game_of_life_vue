@@ -24,16 +24,6 @@ export default {
     <div class="grid-size-selector">
       <button
         class="btn"
-        @click="$emit('set-size', 5)"
-        :class="{
-          'btn-selected': this.size == 5,
-          'btn-deactivated': this.running,
-        }"
-      >
-        5X5
-      </button>
-      <button
-        class="btn"
         @click="$emit('set-size', 10)"
         :class="{
           'btn-selected': this.size == 10,
@@ -62,6 +52,17 @@ export default {
       >
         50x50
       </button>
+      <button
+        class="btn"
+        @click="$emit('set-size', 100)"
+        :class="{
+          'btn-selected': this.size == 100,
+          'btn-deactivated': this.running,
+        }"
+      >
+        100x100
+      </button>
+
     </div>
 
     <form class="probability">
