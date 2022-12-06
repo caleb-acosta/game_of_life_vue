@@ -1,14 +1,6 @@
 # game_of_life_vue
 
-This template should help get you started developing with Vue 3 in Vite.
-
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+This is an implementation of [Conway's Game of life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) in Vue.js.
 
 ## Project Setup
 
@@ -22,20 +14,11 @@ npm install
 npm run dev
 ```
 
+and open [localhost:5173](http://localhost:5173/)
+
 ### Compile and Minify for Production
 
 ```sh
 npm run build
 ```
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
-
-```sh
-npm run test:unit
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
